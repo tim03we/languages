@@ -1,0 +1,91 @@
+guild:
+  notFound:
+    title: "Something went wrong!"
+    content: "It seems that Infinitely cannot connect to the database. Please kick the bot from the server once and try to add it to your server again!"
+  betaMode:
+    title: "BETA mode active!"
+    content: "Currently the BETA mode of Infinitely is activated. This could be because new features are being tested or bugs are being fixed. As long as the BETA mode is activated, you cannot use the bot. Please try again at a later time!"
+
+commands:
+  help:
+    title: ""
+    content: ""
+    prefix:
+      title: "Help for Prefix Command!"
+      content: "**__Description:__**\nChange the prefix to which Infinitely should respond to commands.\nParticularly on large Discord servers with many bots, it happens that another bot already has the default `-` prefix. Change Infinitely's prefix so you don't accidentally control two or three bots at the same time.\n \n**__Use:__**\n`-prefix <prefix>`\n \n**__Required permission:__**\nMANAGE_SERVER"
+    language:
+      title: "Help for Language-Command!"
+      content: "**__Description:__**\nChanges the language Infinitely uses to respond to commands. Infinitely currently comes with a certain number of languages. Help out and translate Infinitely with it. More information with the command `-translate`.\n \n**__Use:__**\n`-prefix <language>`\n \n**__Required permission:__**\nMANAGE_SERVER"
+    kick:
+      title: "Help for Kick-Command!"
+      content: "**__Description:__**\nKick a user from the Discord server.\n \n**__Use:__**\n`-kick <@User>`\n \n**__Required permission:__**\nKICK_MEMBERS"
+  invite:
+    title: "You like Infinitely?"
+    content: "Only together it is possible to make infinitely a unique bot for the whole world.\nYou like infinitely and want to support this project? Then simply add infinitely to your server by [clicking here](https://discord.com/api/oauth2/authorize?client_id=725691315991478314&permissions=8&scope=bot)."
+  kick:
+    noPermission:
+      title: "No permission!"
+      content: "It seems you don't have permission to kick a user from this Discord. Please make sure you have the permission `KICK_MEMBERS` and try again!"
+    notPinged:
+      title: "Invalid member!"
+      content: "To kick a user from this Discord you have to mention a user!\nExample: `-kick @Aenoxic`"
+    canNotInteract:
+      title: "Something wrent wrong!"
+      content: "You cannot interact with the specified user. Please make sure you are above the specified user in the right view."
+      botCanNotInteract:
+        title: "Something wrent wrong!"
+        content: "Infinitely is unable to interact with the specified user. Please make sure Infinitely is in the right view over the specified user."
+    success:
+      title: "Member kicked!"
+      content: "You have successfully kicked the user {user} from this Discord!"
+  ban:
+    noPermission:
+      title: "No permission!"
+      content: "It seems you don't have permission to ban a user from this Discord. Please make sure you have the permission `BAN_MEMBERS` and try again!"
+    notPinged:
+      title: "Invalid member!"
+      content: "To ban a user from this Discord you have to mention a user!\nExample: `-ban @Aenoxic`"
+    canNotInteract:
+      title: "Something wrent wrong!"
+      content: "You cannot interact with the specified user. Please make sure you are above the specified user in the right view."
+      botCanNotInteract:
+        title: "Something wrent wrong!"
+        content: "Infinitely is unable to interact with the specified user. Please make sure Infinitely is in the right view over the specified user."
+    success:
+      title: "Member banned!"
+      content: "You have successfully banned the user {user} from this Discord!"
+  language:
+    noPermissions:
+      title: "No permission!"
+      content: "It seems you don't have permission to change the language for Infinitely on this server. Please make sure you have the permission `MANAGE_SERVER` and try again!"
+    noArgs:
+      title: "Invalid language selected!"
+      content: "Please specify under which language the bot should have on this server.\nExample: `-language deu`\n \nAvailable languages: \n{flagDE} `deu` - Deutsch\n{flagENG} `eng` - English"
+    notFound:
+      title: "Language not found!"
+      content: "This language was not found on our database.\nExample: `-language eng`\n \nAvailable languages: \n{flagDE} `deu` - Deutsch\n{flagENG} `eng` - English"
+    alreadySelected:
+      title: "Language already selected!"
+      content: "The selected language is already selected as the primary language on this server. Please select another language.\n \nAvailable languages: \n{flagDE} `deu` - Deutsch\n{flagENG} `eng` - English"
+    success:
+      title: "Language changed!"
+      content: "The language of Infinitely has been set to 'English' on this server! Now you can enjoy all features and commands of Infinitely in English!"
+  prefix:
+    noPermisions:
+      title: "No Permission!"
+      content: "It seems you don't have permission to change the prefix of Infinitely on this server. Please make sure you have the `MANAGE_SERVER` permission and then try again!"
+    noArgs:
+      title: "No prefix specified!"
+      content: "To set the prefix on this server, you must also specify it.\nExample: `-prefix &`"
+    biggerThanOne:
+      title: "Error setting the prefix!"
+      content: "The prefix may only consist of one character. Specifications like `??` or `&$` are unfortunately not valid."
+    notValid:
+      title: "Invalid prefix!"
+      content: "For security reasons only a certain number of symbols may be used as prefix.\n \nAvailable symbols: `!`, `§`, `$`, `%`, `&`, `(`, `)`, `=`, `?`, `#`, `+`, `-`, `.`, `,`, `>`, `<`, `^`"
+    alreadySelected:
+      title: "Prefix already selected!"
+      content: "The specified prefix is already selected as a prefix on this server. Please select another.\n \nAvailable symbols: `!`, `§`, `$`, `%`, `&`, `(`, `)`, `=`, `?`, `#`, `+`, `-`, `.`, `,`, `>`, `<`, `^`"
+    success:
+      title: "Prefix set!"
+      content: "Your new prefix has been set to {newPrefix}! This can be used to communicate with Infinitely from now on!\n \n{warning_symbol} - Note that Infinitely is still available on the default prefix `-`."

@@ -1,0 +1,95 @@
+guild:
+  notFound:
+    title: "Etwas ist schiefgelaufen!"
+    content: "Es scheint so, als würde Infinitely keine Verbindung zur Datenbank herstellen können. Bitte kicke den Bot einmal vom Server und versuche ihn anschließend erneut zu deinem Server hinzuzufügen!"
+  betaMode:
+    title: "BETA-Modus aktiv!"
+    content: "Derzeitig ist der BETA-Modus von Infinitely aktiviert. Dies könnte den Grund haben, dass möglicherweiße neue Funktionen getestet oder Fehler behoben werden. Solange der BETA-Modus aktiviert ist, kannst Du den Bot nicht nutzen. Bitte versuche es zu einem späteren Zeitpunkt erneut!"
+
+commands:
+  help:
+    title: ""
+    content: ""
+    prefix:
+      title: "Hilfe für Prefix-Command!"
+      content: "**__Beschreibung:__**\nÄndert den Prefix, auf den Infinitely auf Befehle reagieren soll.\nBesonders auf großen Discord-Servern mit vielen Bots, kommt es vor, dass ein anderer Bot bereits den Standard-Prefix `-` besitzt. Ändere den Prefix von Infinitely, damit du nicht ausversehen zwei oder drei Bots gleichzeitig ansteuerst.\n \n**__Verwendung:__**\n`-prefix <Prefix>`\n \n**__Benötigte Berechtigung:__**\nMANAGE_SERVER"
+    language:
+      title: "Hilfe für Language-Command!"
+      content: "**__Beschreibung:__**\nÄndert die Sprache, mit der Infinitely auf Befehle reagiert. Infinitely ist derzeit mit einer gewissen Anzahl an Sprachen ausgestattet. Hilf' uns indem Du Infinitely mit übersetzt. Mehr Informationen mit dem Befehl `-translate`.\n \n**__Verwendung:__**\n`-prefix <Sprache>`\n \n**__Benötigte Berechtigung:__**\nMANAGE_SERVER"
+    kick:
+      title: "Hilfe für Kick-Command!"
+      content: "**__Beschreibung:__**\nKickt einen Benutzer vom Discord-Server.\n \n**__Verwendung:__**\n`-kick <@User>`\n \n**__Benötigte Berechtigung:__**\nKICK_MEMBERS"
+  invite:
+    title: "Dir gefällt Infinitely?"
+    content: "Nur zusammen ist es möglich infinitely zu einem einigartigen Bot für die gesamte Welt zu machen.\nDie gefällt Infinitely und Du möchtest dieses Projekt unterstützen? Füge Infinitely dann ganz einfach zu deinem Server hinzu, indem Du [hier klickst](https://discord.com/api/oauth2/authorize?client_id=725691315991478314&permissions=8&scope=bot)."
+  kick:
+    noPermission:
+      title: "Keine Berechtigung!"
+      content: "Es scheint, als hättest Du keine Berechtigung um einen Nutzer von diesem Discord kicken zu können. Bitte vergewissere dich, dass Du die Berechtigung `KICK_MEMBERS` besitzt und versuche es anschließend erneut!"
+    notPinged:
+      title: "Ungültiger Nutzer!"
+      content: "Um einen Nutzer von diesem Discord kicken zu können, musst du einen Nutzer erwähnen!\nBeispiel: `-kick @Aenoxic`"
+    canNotInteract:
+      title: "Fehler beim Kicken des Nutzers!"
+      content: "Du kannst mit dem angegebenen Nutzer nicht interagieren. Bitte sorge dafür, dass Du über dem angegebenen Nutzer in der rechten Ansicht stehst."
+    botCanNotInteract:
+      title: "Fehler beim Kicken des Nutzers!"
+      content: "Infinitely kann mit dem angegebenen Nutzer nicht interagieren. Bitte sorge dafür, dass Infinitely über den angegebenen Nutzer in der rechten Ansicht steht."
+    success:
+      title: "Nutzer gekickt!"
+      content: "Du hast den Nutzer {user} erfolgreich von diesem Discord gekickt!"
+  ban:
+    noPermission:
+      title: "Keine Berechtigung!"
+      content: "Es scheint, als hättest Du keine Berechtigung um einen Nutzer von diesem Discord bannen zu können. Bitte vergewissere dich, dass Du die Berechtigung `BAN_MEMBERS` besitzt und versuche es anschließend erneut!"
+    notPinged:
+      title: "Ungültiger Nutzer!"
+      content: "Um einen Nutzer von diesem Discord bannen zu können, musst du einen Nutzer erwähnen!\nBeispiel: `-ban @Aenoxic`"
+    canNotInteract:
+      title: "Fehler beim Bannen des Nutzers!"
+      content: "Du kannst mit dem angegebenen Nutzer nicht interagieren. Bitte sorge dafür, dass Du über dem angegebenen Nutzer in der rechten Ansicht stehst."
+    botCanNotInteract:
+      title: "Fehler beim Bannen des Nutzers!"
+      content: "Infinitely kann mit dem angegebenen Nutzer nicht interagieren. Bitte sorge dafür, dass Infinitely über den angegebenen Nutzer in der rechten Ansicht steht."
+    success:
+      title: "Nutzer gebannt!"
+      content: "Du hast den Nutzer {user} erfolgreich von diesem Discord gebannt!"
+  language:
+    noPermissions:
+      title: "Keine Berechtigung!"
+      content: "Es scheint, als hättest Du keine Berechtigung um die Sprache von Infinitely auf diesem Server ändern zu können. Bitte vergewissere dich, dass Du die Berechtigung `MANAGE_SERVER` besitzt und versuche es anschließend erneut!"
+    noArgs:
+      title: "Falsche Sprache ausgewählt!"
+      content: "Bitte gebe an unter welche Sprache der Bot auf diesem Server haben soll.\nBeispiel: `-language deu`\n \nVerfügbare Sprachen: \n{flagDE} `deu` - Deutsch\n{flagENG} `eng` - English"
+    notFound:
+      title: "Sprache nicht gefunden!"
+      content: "Diese Sprache wurde nicht in unserer Datenbank gefunden.\nBeispiel: `-language deu`\n \nVerfügbare Sprachen: \n{flagDE} `deu` - Deutsch\n{flagENG} `eng` - English"
+    alreadySelected:
+      title: "Sprache bereits ausgewählt!"
+      content: "Die ausgewählte Sprache ist bereits als Primärsprache auf diesem Server ausgewählt. Bitte wähle eine andere Sprache.\n \nVerfügbare Sprachen: \n{flagDE} `deu` - Deutsch\n{flagENG} `eng` - English"
+    success:
+      title: "Sprache gesetzt!"
+      content: "Die Sprache von Infinitely wurde auf diesem Server auf `Deutsch` gesetzt! Nun kannst Du alle Features und Befehle von Infinitely auf Deutsch genießen!"
+  prefix:
+    noPermisions:
+      title: "Keine Berechtigung!"
+      content: "Es scheint, als hättest Du keine Berechtigung, um den Prefix von Infinitely auf diesem Server ändern zu können. Bitte vergewissere dich, dass Du die Berechtigung `MANAGE_SERVER` besitzt und versuche es anschließend erneut!"
+    noArgs:
+      title: "Kein Prefix angegeben!"
+      content: "Um den Prefix auf diesem Server festzulegen, musst Du diesen auch angeben.\nBeispiel: `-prefix &`"
+    biggerThanOne:
+      title: "Fehler beim Setzen des Prefix!"
+      content: "Der Prefix darf nur aus einem Zeichen bestehen. Angaben wie `??` oder `&$` sind leider nicht gültig."
+    notValid:
+      title: "Ungültiger Prefix!"
+      content: "Aus Sicherheistgründen dürfen nur eine gewisse Anzahl an Symbolen als Prefix genutzt werden.\n \nVerfügbare Symbole: `!`, `§`, `$`, `%`, `&`, `(`, `)`, `=`, `?`, `#`, `+`, `-`, `.`, `,`, `>`, `<`, `^`"
+    alreadySelected:
+      title: "Prefix bereits ausgewählt!"
+      content: "Der angegebene Prefix ist bereits auf diesem Server als Prefix ausgewählt. Bitte wähle einen anderen.\n \nVerfügbare Symbole: `!`, `§`, `$`, `%`, `&`, `(`, `)`, `=`, `?`, `#`, `+`, `-`, `.`, `,`, `>`, `<`, `^`"
+    success:
+      title: "Prefix gesetzt!"
+      content: "Dein neuer Prefix wurde zu `{newPrefix}` gesetzt! Dieser kann von nun an verwendet werden, um mit Infinitely zu kommunizieren!\n \n{warning_symbol} Bedenke, dass Infinitely weiterhin auf den Standard-Prefix `-` zur Verfügung steht."
+  userinfo:
+    notPinged:
+      title: "Ungültiger Nutzer!"
+      content: "Um mehr Informationen über einen Nutzer von diesem Discord erhalten zu können, musst du einen Nutzer erwähnen!\nBeispiel: `-userinfo @Aenoxic`"
